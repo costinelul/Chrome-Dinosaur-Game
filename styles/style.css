@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+.board {
+    position: relative;
+    width: 760px;
+    height: 260px;
+    outline: 2px solid black;
+    overflow: hidden;
+}
+.ground {
+    height: 9%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-image: url(../Sprite/ground.png);
+    background-position: 0%;
+    background-repeat: repeat-x;
+    background-size: cover;
+}
+.dino {
+    height: 22%;
+    width: 7%;
+    position: absolute;
+    bottom: 0;
+    left: 5vw;
+    background-image: url(../Sprite/dino-stationary.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.score {
+    padding: 0.5vh;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3em;
+}
+.bigCactus,
+.smallCactus {
+    background-image: url(../Sprite/cactus.png);
+    position: absolute;
+    width: 4%;
+    left: 100%;
+    bottom: 0;
+    height: 22%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.bigCactus {
+    width: 7.5%;
+    background-repeat: repeat-x;
+}
+.menu-text {
+    width: 100%;
+    font-size: calc(2vh + 2vw);
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+.gameOver {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    display: none;
+}
